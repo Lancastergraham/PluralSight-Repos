@@ -1,0 +1,15 @@
+I can use getline(<Variable name>, <cin or filestream>) to get an entire string with spaces.
+
+other wise 
+
+cin >> word1 >> word2 
+
+will take the first word till space
+
+for example "Hello World"
+
+word1 will be hello, word2 will be world.
+
+but "Hello Beautiful world"
+
+

@@ -9,5 +9,7 @@ int main() {
 	
 	helloName();
 
+	chap4Exercise();
+
 	return 0;
 }

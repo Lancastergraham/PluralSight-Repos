@@ -1,15 +1,18 @@
-#include <iostream> //Allows cout cin
-#include <string>
-
 #include "SmallFunc.h"
+#include "SimpleClasses.h"
 
-using namespace std;
 
 int main() {
 	
-	helloName();
+	//helloName();
 
-	chap4Exercise();
+	//chap4Exercise();
+
+	//chap4Exercise2();
+
+	//collection();
+
+	hiddenMain();
 
 	return 0;
 }

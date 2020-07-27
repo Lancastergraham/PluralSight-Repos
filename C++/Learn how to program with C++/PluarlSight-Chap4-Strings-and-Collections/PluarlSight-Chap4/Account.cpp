@@ -50,3 +50,8 @@ bool Account::Withdraw(int amt) {
 	}
 	
 }
+
+//Turning this into an inline function
+//int Account::getBalance() {
+//	return balance;
+//}

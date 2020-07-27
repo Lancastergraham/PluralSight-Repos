@@ -12,7 +12,17 @@ word1 will be hello, word2 will be world.
 
 but "Hello Beautiful world"
 
-
+ENCAPSULATION
+-A well written class is changeable.
+-Make all your member variables private.
+--Code outside the class cant count on their names or types
+--You can change name, type without breaking code outside the class
+--Code outside the class doesn't need to know the rules or remember them
+---You can change the business rules later.
 Must use cin.ignore to allow getline(xxx,xxx) to work later, because the getline will consume white space used earlier, like hitting enter from a previous cin >> statement.
 
+-You can add a public member functions as gatekeepers
+--eg getBalance() to find out an account's balance
+--- never assume one getSomething() for ever member varialbe
+--Dont always need a setSomething()
 

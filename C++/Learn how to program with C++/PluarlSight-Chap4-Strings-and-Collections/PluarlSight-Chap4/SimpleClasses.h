@@ -11,7 +11,7 @@ int hiddenMain() {
 	Account a1;
 	a1.Deposit(90);
 
-	cout << "After depositing $90" << endl;
+	cout << "After depositing $90 " << "balance is " << a1.getBalance() << endl;
 
 	for (auto s : a1.Report()) {
 		cout << s << endl;

@@ -2,7 +2,8 @@
 
 using namespace std;
 
-Account::Account(void) : balance(0) {
+//No arguments means default constructor.
+Account::Account(void) : balance(0), limit(100) {
 
 }
 
@@ -25,6 +26,8 @@ bool Account::Deposit(int amt) {
 	if (amt >= 0) {
 		balance += amt;
 		log.push_back(Transaction(amt, "Deposit"));
+		balance -= 1;
+		log.push_back(Transaction(1, "Service Charge"));
 		return true;
 	}
 	else {
@@ -35,10 +38,16 @@ bool Account::Deposit(int amt) {
 bool Account::Withdraw(int amt) {
 	if (amt >= 0) {
 
+		//With encap we can change the code
+		/*
+		We put all the rules to here, we don't change code else where which makes encapsulation very good.
+		*/
 
-		if (balance >= amt) {
+		if (balance + limit >= amt) {
 			balance -= amt;
 			log.push_back(Transaction(amt, "Withdraw"));
+			balance -= 1;
+			log.push_back(Transaction(1, "Service Charge"));
 			return true;
 		}
 		else {

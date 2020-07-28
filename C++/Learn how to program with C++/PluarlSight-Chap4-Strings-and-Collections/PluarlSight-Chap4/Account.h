@@ -10,6 +10,8 @@ private:
 	//Data fields
 	int balance;
 	std::vector<Transaction> log;
+	//Testing encapsulation
+	int limit;
 public:
 	Account(); //Constructor
 	std::vector<std::string> Report();

@@ -5,6 +5,16 @@
 
 using namespace std;
 
+bool quitProgram() {
+	//Data field
+	string answer;
+
+	cout << "Press any key, then Enter to end program... ";
+	cin >> answer;
+
+	return true;
+}
+
 int hiddenMain() {
 
 	//Objects
@@ -27,6 +37,8 @@ int hiddenMain() {
 	for (auto s : a1.Report()) {
 		cout << s << endl;
 	}
+
+	quitProgram();
 
 	return 0;
 }

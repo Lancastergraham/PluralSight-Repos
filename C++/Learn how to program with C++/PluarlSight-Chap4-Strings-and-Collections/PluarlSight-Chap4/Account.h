@@ -14,7 +14,7 @@ private:
 	int limit;
 public:
 	Account(); //Constructor
-	std::vector<std::string> Report();
+	std::vector<std::string> Report() const;
 	bool Deposit(int amt);
 	bool Withdraw(int amt);
 
@@ -22,5 +22,5 @@ public:
 	/*
 	Standard convention if it's bigger than a single line it should not be in the header file and be in the implementation file .cpp
 	*/
-	int getBalance() { return balance; }
+	int getBalance() const { return balance; }
 };

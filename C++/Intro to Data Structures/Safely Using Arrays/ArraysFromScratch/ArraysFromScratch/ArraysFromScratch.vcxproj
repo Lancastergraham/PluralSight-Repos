@@ -139,6 +139,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="IntArray.cpp" />
+    <ClCompile Include="MainProgram.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="IntArray.h" />

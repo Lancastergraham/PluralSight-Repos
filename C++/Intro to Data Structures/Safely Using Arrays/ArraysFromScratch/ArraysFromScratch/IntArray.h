@@ -1,22 +1,37 @@
 #pragma once
+class IndexOutOfBoundsException {
+
+};
+
 class IntArray
 {
 private:
 	//Data fields
-	int* m_ptr;
-	int m_size;
+	int* m_ptr{ nullptr };
+	int m_size = 0;
 
 public:
 	//Data Fields
 	//Constructors
-	int intArray();
+	IntArray();
 
-	int intArray(int);
+	IntArray(int);
+
+	//Destructor
+	~IntArray();
 
 	//Getters
 	int getSize() const;
 
 	//Methods
+	//"Checks if the array is empty"
 	bool isEmpty() const;
+	//"Provides protection to make sure the index doesn't goes out of bounds."
+	bool isValidIndex(int) const;
+
+	//Overloads
+	int& operator [] (int);
+
+	int operator [] (int) const;
 };
 
